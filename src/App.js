@@ -1,7 +1,7 @@
 import React from 'react';
-
-
+import './styles/App.css'
 import HomePage from './pages/HomePage.js'
+
 
 class App extends React.Component {
     render() {
@@ -9,6 +9,7 @@ class App extends React.Component {
             <div>
 
                 <HomePage/>
+
 
 
             </div>
