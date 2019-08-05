@@ -1,11 +1,20 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css'
+import HomePage from './pages/HomePage.js'
 
-function App() {
-  return (
-    <div>
-    </div>
-  );
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+
+                <HomePage/>
+
+
+
+            </div>
+        )
+    }
 }
 
 export default App;
