@@ -1,7 +1,11 @@
 {
-  "name": "my-app",
+  "name": "my-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.3",
     "antd": "^3.21.0",
@@ -9,7 +13,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-transition-group": "^4.2.2"
+    "react-transition-group": "^4.2.2",
+    "serve": "^11.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
