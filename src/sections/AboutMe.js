@@ -18,7 +18,7 @@ class AboutMe extends Component {
             <Row id='AboutMe' >
                 <Col md={7} span={1}>
                 </Col>
-                <Col md={10} span ={20} style={{
+                <Col md={10} span ={22} style={{
                     top: '50px',
                     color:' #515151',
                     fontFamily: "Avenir",

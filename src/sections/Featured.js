@@ -17,7 +17,7 @@ class Featured extends Component {
                 <Col md={11} className='imageHolder'>
                     <img src={abcu} alt='elucabista.com'/>
                 </Col>
-                <Col md={1} >
+                <Col md={1}>
                 </Col>
 
 

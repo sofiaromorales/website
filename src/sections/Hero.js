@@ -24,14 +24,14 @@ class Hero extends Component {
                 <Row type= 'flex' gutter={16} >
                     <Col md={24} style={{height:70}}></Col>
                     <Col md={1}></Col>
-                    <Col md={11}>
+                    <Col md={14} span={24}>
                         <Title id = 'Title'>Sofia Rodriguez</Title>
                      </Col>
-                     <Col md={11}>
+                     <Col md={8} span={24}>
                          <ul style={{
                              listStyleType: 'none',
                              position: 'absolute',
-                             right: 20,
+                             float: 'right',
                          }}>
                              <li><NavigationSocialLinks link = "https://www.instagram.com/" target="_blank" title = "Instagram"/></li>
                              <li><NavigationSocialLinks link = "https://twitter.com/sofiarom_00" target="_blank" title = "Twitter"/></li>

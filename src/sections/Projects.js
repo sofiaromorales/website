@@ -21,7 +21,7 @@ class Projects extends Component {
             <Row id='Projects'>
                 <Col md={2} span={1}>
                 </Col>
-                <Col md={20} span={20}>
+                <Col md={20} span={22}>
                     <Row type="flex" justify="space-around">
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
