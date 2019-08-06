@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './HomeStyle.css'
 import { Row, Col } from 'antd';
-import { Typography } from 'antd';
 
-
-const { Title } = Typography;
-const { Text } = Typography;
 
 const handleLetsTalkClick = () => {
     window.open('mailto:sofiaromorales@gmail.com')

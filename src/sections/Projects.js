@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import './HomeStyle.css'
 import { Row, Col } from 'antd';
-import { Typography } from 'antd';
+
 
 
 import zuma from '../assets/images/Zuma.png'
 import kosaraju from '../assets/images/Kosaraju.png'
 import drawing from '../assets/images/drawing.png'
 
-
-const { Title } = Typography;
-const { Text } = Typography;
 
 
 

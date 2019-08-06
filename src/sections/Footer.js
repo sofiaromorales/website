@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
-import { Typography } from 'antd';
+
 
 import NavigationSocialLinks from '../components/NavigationSocialLinks'
 
