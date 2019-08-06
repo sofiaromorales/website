@@ -16,9 +16,9 @@ class AboutMe extends Component {
     render() {
         return(
             <Row id='AboutMe' >
-                <Col md={7}>
+                <Col md={7} span={1}>
                 </Col>
-                <Col md={10} style={{
+                <Col md={10} span ={20} style={{
                     top: '50px',
                     color:' #515151',
                     fontFamily: "Avenir",
@@ -40,7 +40,7 @@ class AboutMe extends Component {
                         </Col>
                     </Row>
                 </Col>
-                <Col md={7}>
+                <Col md={7} span={1}>
                 </Col>
 
 

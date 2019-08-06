@@ -19,9 +19,9 @@ class Projects extends Component {
     render() {
         return(
             <Row id='Projects'>
-                <Col md={2}>
+                <Col md={2} span={1}>
                 </Col>
-                <Col md={20}>
+                <Col md={20} span={20}>
                     <Row type="flex" justify="space-around">
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
@@ -55,7 +55,7 @@ class Projects extends Component {
                         </Col>
                     </Row>
                 </Col>
-                <Col md={2}>
+                <Col md={2} span={1}>
                 </Col>
             </Row>
         );

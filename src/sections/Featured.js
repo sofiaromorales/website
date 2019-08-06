@@ -9,7 +9,7 @@ class Featured extends Component {
     render() {
         return(
             <Row type="flex" justify="space-around" style={{marginTop:50, marginBottom:100}}>
-            <Col md={1} >
+            <Col md={1}>
             </Col>
                 <Col md={11} className='imageHolder'>
                     <img src={ucabista} alt='elucabista.com'/>
