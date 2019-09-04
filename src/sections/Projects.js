@@ -19,6 +19,13 @@ class Projects extends Component {
                 <Col md={2} span={1}>
                 </Col>
                 <Col md={20} span={22}>
+                <p style = {{
+                    fontSize: '28px',
+                    textAlign: 'center',
+                    color: '#363636'
+                }}>
+                    Projects
+                </p>
                     <Row type="flex" justify="space-around">
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
