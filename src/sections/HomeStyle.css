@@ -164,6 +164,11 @@ img{
     font-size: 40px;
 }
 
+#progressCircle{
+    margin:50px;
+    width:100px
+}
+
 
 
 @-webkit-keyframes Gradient {

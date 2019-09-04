@@ -25,8 +25,10 @@ class AboutMe extends Component {
                         fontSize: '28px',
                         textAlign: 'center'
                     }}>Sofia Rodriguez</p>
-                    <p>Hello! I’m a 18 years developer from Caracas, Venezuela.</p>
-                    <p>I do websites, apps (iOS) and design. My main goal is turn ideas into reality creating beautiful and engaging products. </p>
+                    <p>Hello! I’m a 19 years developer from Caracas, Venezuela.</p>
+                    <p>I create websites, apps (iOS) and design.</p>
+                    <p>I have attended to the Apple Worldwide Developers Confrence three times as an Apple scholar.</p>
+                    <p> My main goal is turn ideas into reality creating beautiful and engaging products. </p>
                     <p>Interested in working together? Just shoot me a message and let’s see what I can do for you!.</p>
                     <Row  type="flex" justify="center" style={{
                         margin: 50
