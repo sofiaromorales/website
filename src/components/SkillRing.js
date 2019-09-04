@@ -14,8 +14,8 @@ function SkillRing (props){
                                 <Progress
                                     type="circle"
                                     strokeColor={{
-                                        '0%': '#331454',
-                                        '100%': '#EE7752',
+                                        '0%': props.color1,
+                                        '100%': props.color2,
                                     }}
                                     percent={props.percentage}
                                 />

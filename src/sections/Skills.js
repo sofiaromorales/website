@@ -10,7 +10,7 @@ class Skills extends Component {
 
     render() {
         return(
-            <Row>
+            <Row id='Skills'>
                 <p style = {{
                     fontSize: '28px',
                     textAlign: 'center',
@@ -23,8 +23,8 @@ class Skills extends Component {
                     justify="center"
                     style={{padding:20}}
                 >
-                    <SkillRing skill='Swift' percentage='80'/>
-                    <SkillRing skill='Design' percentage='95'/>
+                    <SkillRing skill='Swift' percentage='80' color1='#3F45D2' color2='#EE7752'/>
+                    <SkillRing skill='Design' percentage='95' color1='#B30FB0' color2='#43BAA6'/>
 
 
                 </Row>
