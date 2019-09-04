@@ -22,9 +22,12 @@ class AboutMe extends Component {
 
                 }}>
                     <p style = {{
-                        fontSize: '28px',
-                        textAlign: 'center'
-                    }}>Sofia Rodriguez</p>
+                        fontSize: '48px',
+                        textAlign: 'center',
+                        color: '#363636'
+                    }}>
+                        Sofia Rodriguez
+                    </p>
                     <p>Hello! I’m a 19 years developer from Caracas, Venezuela.</p>
                     <p>I create websites, apps (iOS) and design.</p>
                     <p>I have attended to the Apple Worldwide Developers Confrence three times as an Apple scholar.</p>
@@ -34,7 +37,9 @@ class AboutMe extends Component {
                         margin: 50
                     }}>
                         <Col md={8}>
-                            <button type="button" onClick={handleLetsTalkClick} id="talkBtn">Lets talk!</button>
+                            <button type="button" onClick={handleLetsTalkClick} id="talkBtn">
+                                Lets talk!
+                            </button>
                         </Col>
                     </Row>
                 </Col>
