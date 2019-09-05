@@ -24,7 +24,8 @@ class AboutMe extends Component {
                     <p style = {{
                         fontSize: '48px',
                         textAlign: 'center',
-                        color: '#363636'
+                        color: '#363636',
+                        fontFamily: "Avenir"
                     }}>
                         Sofia Rodriguez
                     </p>

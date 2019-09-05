@@ -6,7 +6,7 @@ class Divider extends Component {
     render() {
         return(
             <Row type='flex' justify='center'>
-                <Col md = {14} style={{
+                <Col md={14} span={18} style={{
                     height:1,
                     background:'grey',
                     margin:50

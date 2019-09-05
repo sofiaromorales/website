@@ -5,12 +5,12 @@ const { Text } = Typography;
 
 function SkillRing (props){
         return(
-                    <Col md={8}>
+                    <Col md={12} span={24} style={{marginBottom:30}}>
                         <Row
                             type="flex"
-                            justify="start"
+                            justify="center"
                         >
-                            <Col md={12}>
+                            <Col md={12} span={10}>
                                 <Progress
                                     type="circle"
                                     strokeColor={{
@@ -20,7 +20,7 @@ function SkillRing (props){
                                     percent={props.percentage}
                                 />
                             </Col>
-                            <Col md={3} >
+                            <Col md={3} span={3}>
                                 <Text
                                     style ={{fontSize: 25, textAlign: 'left'}}
                                 >

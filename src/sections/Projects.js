@@ -29,8 +29,8 @@ class Projects extends Component {
                     <Row type="flex" justify="space-around">
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
-                                <img src={zuma}   alt='Projcet'/>
-                                <p >
+                                <img src={zuma}   alt='Zuma'/>
+                                <p>
                                     A basic game inspirated in the match-3 classic game Zuma <br></br>
                                     Made in Java
                                 </p>
@@ -38,7 +38,7 @@ class Projects extends Component {
                         </Col>
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
-                                <img src={kosaraju}   alt='Projcet'/>
+                                <img src={kosaraju}   alt='Kosaraju'/>
                                 <p >
                                     A program that finds  the strongly connected components of a graph <br></br>
                                     Made in Python
@@ -47,7 +47,7 @@ class Projects extends Component {
                         </Col>
                         <Col md={12} style={{marginTop:20}}>
                             <div className= 'ProjectContainer'>
-                                <img src={drawing}   alt='Projcet'/>
+                                <img src={drawing}   alt='Drawing War'/>
                                 <p >
                                     A Pictionary game for 1 player only powered by machine learning <br></br>
                                     Made in Swift

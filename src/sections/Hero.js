@@ -22,14 +22,14 @@ class Hero extends Component {
         return(
             <div id='Hero'>
                 <Row type= 'flex' justify="space-around">
-                    <Col md={24} style={{height:70}}></Col>
-                    <Col md={1}></Col>
-                    <Col md={12} span={24}>
+                    <Col span={24} style={{height:70}}></Col>
+                    <Col span={1}></Col>
+                    <Col md={12} span={20}>
                         <Title id = 'Title'>
                             Sofia Rodriguez
                         </Title>
                      </Col>
-                     <Col md={8} span={24}>
+                     <Col md={8} span={20}>
                          <ul style={{
                              listStyleType: 'none',
                              position: 'absolute',
