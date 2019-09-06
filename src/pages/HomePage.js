@@ -15,14 +15,23 @@ class HomePage extends Component {
     render() {
         return(
             <div>
+                console.log('hero')
                 <Hero/>
+                console.log('about')
                 <AboutMe/>
+                console.log('div')
                 <Divider/>
+                console.log('skills')
                 <Skills/>
+                console.log('div')
                 <Divider/>
+                console.log('projects')
                 <Projects/>
+                console.log('div')
                 <Divider/>
+                console.log('feaut')
                 <Featured/>
+                console.log('foot')
                 <Footer/>
             </div>
 
