@@ -15,23 +15,23 @@ class HomePage extends Component {
     render() {
         return(
             <div>
-                console.log('hero')
+                {console.log('hero')}
                 <Hero/>
-                console.log('about')
+                {console.log('about')}
                 <AboutMe/>
-                console.log('div')
+                {console.log('div')}
                 <Divider/>
-                console.log('skills')
+                {console.log('skills')}
                 <Skills/>
-                console.log('div')
+                {console.log('div')}
                 <Divider/>
-                console.log('projects')
+                {console.log('projects')}
                 <Projects/>
-                console.log('div')
+                {console.log('div')}
                 <Divider/>
-                console.log('feaut')
+                {console.log('feaut')}
                 <Featured/>
-                console.log('foot')
+            {    console.log('foot')}
                 <Footer/>
             </div>
 
