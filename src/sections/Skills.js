@@ -25,8 +25,8 @@ class Skills extends Component {
                     </p>
                     <Row type="flex" justify="space-around" >
                         <Col md={24}>
-                            <SkillRing skill='Swift' percentage='80' color1='#3F45D2' color2='#EE7752'/>
-                            <SkillRing skill='Design' percentage='95' color1='#B30FB0' color2='#43BAA6'/>
+                            <SkillRing skill='Swift' percentage='80'/>
+                            <SkillRing skill='Design' percentage='95'/>
                         </Col>
                         <Col md={24}>
                             <SkillRing skill='React' percentage='75'/>
