@@ -11,14 +11,14 @@ class Featured extends Component {
             <Row type='flex' justify="center" style={{marginTop:50, marginBottom:100}}>
 
 
-                <Col md={10} className='imageHolder' >
-                    <a href='http://elucabista.com/tag/sofia-rodriguez/' target='_blank'>
-                        <img style = {{width:400}} src={ucabista} alt='elucabista.com'/>
+                <Col md={10} span={20}>
+                    <a href='http://elucabista.com/tag/sofia-rodriguez/' target='_blank' rel='noopener noreferrer'>
+                        <img style = {{maxWidth:'90%', padding:25}} src={ucabista} alt='elucabista.com'/>
                     </a>
                 </Col>
-                <Col md={10} className='imageHolder' >
+                <Col md={10} span={20}>
                     <a href='https://es.abcufoundation.org/sofia-rodriguez/' target='_blank'>
-                        <img style = {{width:400}} src={abcu} alt='elucabista.com'/>
+                        <img style = {{maxWidth:'90%', padding:25}} src={abcu} alt='elucabista.com'/>
                     </a>
                 </Col>
 
