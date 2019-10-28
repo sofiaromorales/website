@@ -150,7 +150,8 @@ img{
     border-radius: 50px;
     color: #515151;
     height: 50px;
-    width: 200px;
+    width: 100%;
+    margin-top: 20px;
     transition: all 0.5s;
 
 
