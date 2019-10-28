@@ -11,12 +11,12 @@ class Featured extends Component {
             <Row type='flex' justify="center" style={{marginTop:50, marginBottom:100}}>
 
 
-                <Col md={10} span={13}>
-                    <a href='http://elucabista.com/tag/sofia-rodriguez/' target='_blank'>
+                <Col md={10} span={20}>
+                    <a href='http://elucabista.com/tag/sofia-rodriguez/' target='_blank' rel='noopener noreferrer'>
                         <img style = {{maxWidth:'100%', padding:25}} src={ucabista} alt='elucabista.com'/>
                     </a>
                 </Col>
-                <Col md={10} span={13}>
+                <Col md={10} span={20}>
                     <a href='https://es.abcufoundation.org/sofia-rodriguez/' target='_blank'>
                         <img style = {{maxWidth:'100%', padding:25}} src={abcu} alt='elucabista.com'/>
                     </a>
