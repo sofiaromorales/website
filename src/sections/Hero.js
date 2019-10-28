@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './HomeStyle.css'
+import Vlog from '../pages/Vlog'
 import { Row, Col } from 'antd';
+import { Route, Link, BrowserRouter as Router  } from "react-router-dom";
 import { Typography } from 'antd';
+
+
 
 import NavigationSocialLinks from '../components/NavigationSocialLinks'
 
@@ -17,10 +21,12 @@ function NavigationBarLinks(props){
 
 
 
-class Hero extends Component {
-    render() {
+class Hero extends Component  {
+    render(){
         return(
+
             <div id='Hero'>
+
                 <Row type= 'flex' justify="space-around">
                     <Col span={24} style={{height:70}}></Col>
                     <Col span={1}></Col>
@@ -53,6 +59,11 @@ class Hero extends Component {
                                 <li><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
                                 <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
                                 <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
+                                <li><NavigationBarLinks link="../pages/Vlog" title = "Vlog" /></li>
+
+
+
+
                             </ul>
                         </Row>
                     </Col>
@@ -60,6 +71,7 @@ class Hero extends Component {
                 </Row>
 
             </div>
+
         );
     }
 }
