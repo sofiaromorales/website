@@ -90,7 +90,7 @@ img{
     position: relative;
     width: 100%;
     top: 5px;
-    height: 120px;
+    height: 150px;
     background:linear-gradient(-45deg, #331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #5BB850);
     background-size: 400% 400%;
 	-webkit-animation: Gradient 35s ease infinite;
