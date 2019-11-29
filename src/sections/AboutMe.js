@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './HomeStyle.css'
-import { Row, Col } from 'antd';
+import { Row, Col, Typography } from 'antd';
+const { Text, Paragraph } = Typography;
 
 
 const handleLetsTalkClick = () => {
@@ -18,21 +19,23 @@ class AboutMe extends Component {
                     fontFamily: "Avenir",
                     fontSize: '20px',
                 }}>
-                    <p style = {{
-                        fontSize: '48px',
-                        textAlign: 'center',
-                        color: '#363636',
-                        fontFamily: "Avenir"
-                    }}>
-                        Sofia Rodriguez
-                    </p>
+
+                    <Col span={5}/>
+                    <Col span={14}>
+                        <Text style = {{
+                            fontSize: '48px',
+                        }}>
+                            Sofia Rodriguez
+                        </Text>
+                    </Col>
+                    <Col span={5}/>
                     <Col span={1}/>
                     <Col span={22}>
-                        <p>Hello! I’m a 19 years developer from Caracas, Venezuela.</p>
-                        <p>I create websites, apps (iOS) and design.</p>
-                        <p>I have attended to the Apple Worldwide Developers Confrence three times as an Apple scholar.</p>
-                        <p> My main goal is turn ideas into reality creating beautiful and engaging products. </p>
-                        <p>Interested in working together? Just shoot me a message and let’s see what I can do for you!.</p>
+                        <Paragraph>Hello! I’m a 19 years developer from Caracas, Venezuela.</Paragraph>
+                        <Paragraph>I create websites, apps (iOS) and design.</Paragraph>
+                        <Paragraph>I have attended to the Apple Worldwide Developers Confrence three times as an Apple scholar.</Paragraph>
+                        <Paragraph> My main goal is turn ideas into reality creating beautiful and engaging products. </Paragraph>
+                        <Paragraph>Interested in working together? Just shoot me a message and let’s see what I can do for you!.</Paragraph>
                     </Col>
                         <Col span={6}/>
                         <Col span={12}>

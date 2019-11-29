@@ -4,7 +4,7 @@ import SkillRing from '../components/SkillRing'
 
 
 import 'react-circular-progressbar/dist/styles.css';
-const { Text } = Typography;
+
 
 class Skills extends Component {
 
@@ -30,7 +30,7 @@ class Skills extends Component {
                         </Col>
                         <Col md={24}>
                             <SkillRing skill='React' percentage='75'/>
-                            <SkillRing skill='Python' percentage='75'/>
+                            <SkillRing skill='Java' percentage='57'/>
                         </Col>
                     </Row>
 

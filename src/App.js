@@ -3,14 +3,20 @@ import React from 'react';
 import './styles/App.css'
 import HomePage from './pages/HomePage.js'
 
-ReactGA.initialize('UA-147078244-1');
+
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-147078244-1');
+    ReactGA.pageview('/HomePage');
+}
 
 class App extends React.Component {
     render() {
         return (
             <div>
-
+                initializeReactGA()
                 <HomePage/>
+
 
 
 
