@@ -11,10 +11,15 @@ function initializeReactGA() {
 }
 
 class App extends React.Component {
+
+    componentDidMount(){
+        initializeReactGA()
+    }
+
     render() {
         return (
             <div>
-                initializeReactGA()
+
                 <HomePage/>
 
 
