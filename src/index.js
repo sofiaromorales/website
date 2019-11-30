@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import './fonts/AvenirLTStd-Book.otf'
+import './fonts/AvenirLTStd-Medium.otf'
+import './fonts/AvenirLTStd-Roman.otf'
 
 
 
