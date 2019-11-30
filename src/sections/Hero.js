@@ -20,7 +20,7 @@ function NavigationBarLinks(props){
 class Hero extends Component {
     render() {
         return(
-            <Row id='Hero'>
+            <Row id='Hero' style={{height:window.innerHeight}}>
                 <Col span={2}/>
                 <Col span={20}>
                 <Row>
@@ -39,15 +39,12 @@ class Hero extends Component {
 
                         </Col>
                 </Row>
-                <Row style={{ height:600}}align="bottom"  type="flex">
-                        <Col md={24}>
-
-                                <li style={{listStyleType: 'none'}}><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
-                                <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
-                                <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
-
-
-                        </Col>
+                <Row style={{ height:window.innerHeight - 250}} align="bottom"  type="flex">
+                    <Col md={24}>
+                            <li><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
+                            <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
+                            <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
+                    </Col>
                 </Row>
 
                 </Col>
