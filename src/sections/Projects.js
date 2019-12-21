@@ -32,7 +32,7 @@ class Projects extends Component {
                             <div className= 'ProjectContainer'>
                                 <img src={zuma}   alt='Zuma'/>
                                 <p>
-                                    A basic game inspirated in the match-3 classic game Zuma <br></br>
+                                    A basic game inspired by Zuma from Match3Games (link to https://www.match3games.com/game/Zuma?)
                                     Made in Java
                                 </p>
                             </div>
@@ -41,8 +41,8 @@ class Projects extends Component {
                             <div className= 'ProjectContainer'>
                                 <img src={kosaraju}   alt='Kosaraju'/>
                                 <p >
-                                    A program that finds  the strongly connected components of a graph <br></br>
-                                    Made in Python
+                                A program that finds the most strongly-connected components of a graph
+                                Made in Python
                                 </p>
                             </div>
                         </Col>
@@ -50,8 +50,8 @@ class Projects extends Component {
                             <div className= 'ProjectContainer'>
                                 <img src={drawing}   alt='Drawing War'/>
                                 <p >
-                                    A Pictionary game for 1 player only powered by machine learning <br></br>
-                                    Made in Swift
+                                A 1-player version of the game Pictionary, powered by machine learning
+                                Made in Swift
                                 </p>
                             </div>
                         </Col>
