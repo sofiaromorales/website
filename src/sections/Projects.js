@@ -7,6 +7,7 @@ import { Row, Col } from 'antd';
 import zuma from '../assets/images/Zuma.png'
 import kosaraju from '../assets/images/Kosaraju.png'
 import drawing from '../assets/images/drawing.png'
+import soundBox from '../assets/images/soundBox.png'
 
 
 
@@ -51,6 +52,14 @@ class Projects extends Component {
                                 <p >
                                     A Pictionary game for 1 player only powered by machine learning <br></br>
                                     Made in Swift
+                                </p>
+                            </div>
+                        </Col>
+                        <Col md={12} style={{marginTop:20}}>
+                            <div className= 'ProjectContainer'>
+                                <img src={soundBox}   alt='Sound Box'/>
+                                <p >
+                                    My winner WWDC18 scholarship application.
                                 </p>
                             </div>
                         </Col>
