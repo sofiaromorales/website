@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CookieConsent from "react-cookie-consent";
 
 
 import Hero from '../sections/Hero'
@@ -15,23 +16,26 @@ class HomePage extends Component {
     render() {
         return(
             <div>
-                {console.log('hero')}
+            <CookieConsent
+                    location='bottom'
+                    buttonText='Accept'
+                    style={{ background: 'grey', color: 'black' }}
+                    buttonStyle={{
+                        background: 'white',
+                        color: 'black',
+                        fontSize: '13px'
+                    }}
+                >
+                This website uses cookies
+                </CookieConsent>
                 <Hero/>
-                {console.log('about')}
                 <AboutMe/>
-                {console.log('div')}
                 <Divider/>
-                {console.log('skills')}
                 <Skills/>
-                {console.log('div')}
                 <Divider/>
-                {console.log('projects')}
                 <Projects/>
-                {console.log('div')}
                 <Divider/>
-                {console.log('feaut')}
                 <Featured/>
-            {    console.log('foot')}
                 <Footer/>
             </div>
 
