@@ -1,8 +1,13 @@
 import ReactGA from 'react-ga';
 import React from 'react';
 import './styles/App.css'
-import HomePage from './pages/HomePage.js'
+import {
+    Switch,
+    Route,
+} from 'react-router-dom';
 
+import HomePage from './pages/HomePage.js'
+import Posts from './pages/PostsPage.js'
 
 
 function initializeReactGA() {
@@ -18,11 +23,14 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-
-                <HomePage/>
-
-            </div>
+            <Switch>
+                <Route path='/' exact>
+                    <HomePage/>
+                </Route>
+                <Route path='/Posts'>
+                    <Posts/>
+                </Route>
+            </Switch>
         )
     }
 }
