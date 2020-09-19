@@ -7,8 +7,8 @@ import {
 } from 'react-router-dom';
 
 import HomePage from './pages/HomePage.js'
-import Posts from './pages/PostsPage.js'
-
+import PostsPage from './pages/PostsPage.js'
+import PostContentPage from './pages/PostContentPage'
 
 function initializeReactGA() {
     ReactGA.initialize('UA-147078244-1');
@@ -27,9 +27,17 @@ class App extends React.Component {
                 <Route path='/' exact>
                     <HomePage/>
                 </Route>
-                <Route path='/Posts'>
-                    <Posts/>
+                <Route path='/posts' exact>
+                    <PostsPage/>
                 </Route>
+                <Route
+                    path='/posts/:id'
+                    render={(props) => (
+                        <PostContentPage
+                            {...props}
+                        />
+                    )}
+                    />
             </Switch>
         )
     }

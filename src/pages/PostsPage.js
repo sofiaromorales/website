@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Row, Col, Typography } from 'antd';
+import { Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import moment from 'moment'
 
-const { Title } = Typography;
 
 class PostsPage extends Component{
 
@@ -32,28 +33,38 @@ class PostsPage extends Component{
     }
 
     getPostsTitles = (post) => {
-        console.log(post.slice(2, - 3));
-        const title = post.slice(2, - 3)
-        return title
+        const link = post.slice(0, -3)
+        const title = post.slice(2, post.indexOf('_',2))
+        const date = post.slice(post.indexOf('_',2) + 1, -3)
+        return ({
+            link: post,
+            title: title,
+            date: date
+        })
     }
 
     renderPostsWrappers = () => {
         const {
             posts
         } = this.state
-        console.log('renderPostsWrappers');
 
         return posts.map(t => {
-            console.log('t');
-            console.log(t);
+            const postInfo = this.getPostsTitles(t)
             return (
-                <Row>
-                    <Col>
-                        <Title>
-                            {this.getPostsTitles(t)}
-                        </Title>
-                    </Col>
-                </Row>
+                <Link to={`/posts/${postInfo.link}`}>
+                    <Row className='align-items-end'>
+                        <Col xs='auto'>
+                            <h3 className='mb-0'>
+                                {postInfo.title}
+                            </h3>
+                        </Col>
+                        <Col xs={6}>
+                            <h5 className='mb-0'>
+                                {postInfo.date}
+                            </h5>
+                        </Col>
+                    </Row>
+                </Link>
             )
         })
     }
@@ -62,10 +73,9 @@ class PostsPage extends Component{
     render(){
 
         return(
-            <Row justify="center">
-                <Col span={2} md={7}/>
-                <Col span={20} md={10}>
-                postspage
+            <Row className='justify-content-center'>
+                <Col xs={10} className=''>
+
                     {
                         this.state.posts &&
                         <>
@@ -73,7 +83,6 @@ class PostsPage extends Component{
                         </>
                     }
                 </Col>
-                <Col span={2} md={7}/>
             </Row>
 
         )

@@ -29,6 +29,13 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  const status = err.status || 500;
+  res.res.sendStatus(status);
+  res.render('error');
+});
+
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls
     if (req.path.indexOf('/api/') != -1) {
@@ -49,12 +56,15 @@ app.get('/api/test', (request, response) => {
 });
 
 app.get('/api/fetchAllPosts', (request, response) => {
-    console.log('/api/fetchAllPosts');
     const file = fs.readdirSync('./docs/posts/')
+    response.send(file)
+});
+
+app.get('/api/fetchPost/:id', (request, response) => {
+    const file = fs.readFileSync(`./docs/posts/${request.params.id}`)
     console.log('file');
     console.log(file);
     response.send(file)
-
 });
 
 app.listen(port, () => {
