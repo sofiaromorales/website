@@ -9,7 +9,12 @@ const { Title } = Typography;
 
 function NavigationBarLinks(props){
     return(
-        <a  style = {{fontSize:24}} href={props.link}> {props.title}</a>
+        <a
+            style={{fontSize:24, color:'white'}}
+            href={props.link}
+        >
+            {props.title}
+        </a>
     );
 }
 
@@ -42,7 +47,7 @@ class Hero extends Component {
                             <li><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
                             <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
                             <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
-                            <li><NavigationBarLinks link = '/Posts' title = 'Posts'/></li>
+                            <li><NavigationBarLinks link = '/posts' title = 'Posts'/></li>
                     </Col>
                 </Row>
 
