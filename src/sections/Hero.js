@@ -29,7 +29,7 @@ class Hero extends Component {
                 <Row>
                     <Col span={24} style={{height:70}}/>
                     <Col md={12} span={24}>
-                        <Title id = 'Title'>
+                        <Title id='Title'>
                             Sofia Rodriguez
                         </Title>
                     </Col>
@@ -50,10 +50,8 @@ class Hero extends Component {
                             <li><NavigationBarLinks link = '/posts' title = 'Posts'/></li>
                     </Col>
                 </Row>
-
                 </Col>
                 <Col span={2}/>
-
             </Row>
         );
     }

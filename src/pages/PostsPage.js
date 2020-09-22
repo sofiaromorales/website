@@ -2,6 +2,26 @@ import React, { Component } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
+import styled from 'styled-components'
+
+
+import NavigationBar from '../components/NavigationBar'
+import Footer from '../sections/Footer'
+
+const Entry = styled(Link)`
+    &:hover {
+        text-decoration: none;
+    }
+`
+
+const EntryCard= styled(Row)`
+    border-radius: 7px
+    transition: .3s;
+
+    &:hover {
+        box-shadow: 5px 0 11px rgba(51, 20, 84,.1), -5px 0 11px rgba(51, 20, 84,.1), 0 5px 11px rgba(179, 15, 176,.1), 0px -5px 11px rgba(91, 184, 80,.1);
+    }
+`
 
 
 class PostsPage extends Component{
@@ -33,9 +53,8 @@ class PostsPage extends Component{
     }
 
     getPostsTitles = (post) => {
-        const link = post.slice(0, -3)
-        const title = post.slice(2, post.indexOf('_',2))
-        const date = post.slice(post.indexOf('_',2) + 1, -3)
+        const title = post.slice(0, post.indexOf('_',1))
+        const date = post.slice(post.indexOf('_',1) + 1, -3)
         return ({
             link: post,
             title: title,
@@ -43,28 +62,62 @@ class PostsPage extends Component{
         })
     }
 
+    sortPostsByDate = (posts) => {
+        posts.sort((postA, postB) => {
+            const datePostA = postA.slice(postA.indexOf('_',1) + 1, -3)
+            const datePostB = postB.slice(postB.indexOf('_',1) + 1, -3)
+            console.log('datePostA');
+            console.log(datePostA);
+            console.log('datePostB');
+            console.log(datePostB);
+            if (moment(datePostA) >moment(datePostB)){
+                console.log(postA);
+                console.log('>');
+                console.log(postB);
+                return -1
+            }else if (moment(datePostA) < moment(datePostB)){
+                return 1
+            }else{
+                return 0
+            }
+        })
+        console.log('posts');
+        console.log(posts);
+        return posts
+    }
+
     renderPostsWrappers = () => {
         const {
             posts
         } = this.state
 
-        return posts.map(t => {
+        const postsSorted = this.sortPostsByDate(posts)
+        console.log('postsSorted');
+        console.log(postsSorted);
+        return postsSorted.map(t => {
             const postInfo = this.getPostsTitles(t)
             return (
-                <Link to={`/posts/${postInfo.link}`}>
-                    <Row className='align-items-end'>
-                        <Col xs='auto'>
+                <Entry
+                    to={`/posts/${postInfo.link}`}
+                >
+                <EntryCard className='my-3 p-4 border'>
+
+                    <Col >
+
                             <h3 className='mb-0'>
                                 {postInfo.title}
                             </h3>
-                        </Col>
-                        <Col xs={6}>
-                            <h5 className='mb-0'>
-                                {postInfo.date}
-                            </h5>
-                        </Col>
-                    </Row>
-                </Link>
+
+                    </Col>
+                    <Col xs='auto' className='align-self-end'>
+                        <p className='mb-0 text-secondary'>
+                            {moment(postInfo.date).format('MMMM Do YYYY')}
+                        </p>
+                    </Col>
+
+                </EntryCard>
+                    </Entry>
+
             )
         })
     }
@@ -73,8 +126,12 @@ class PostsPage extends Component{
     render(){
 
         return(
+
             <Row className='justify-content-center'>
-                <Col xs={10} className=''>
+                <Col xs={12} className=''>
+                    <NavigationBar/>
+                </Col>
+                <Col xs={10} className='mt-5'>
 
                     {
                         this.state.posts &&
@@ -83,7 +140,15 @@ class PostsPage extends Component{
                         </>
                     }
                 </Col>
+                {
+                    // <Col xs={12} className='align-self-end'>
+                    //     <Footer/>
+                    // </Col>
+            }
+
             </Row>
+
+
 
         )
     }
