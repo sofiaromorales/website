@@ -4,11 +4,14 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Title = styled(Link)`
-    color:white;
     font-size:35px;
+    stroke-width: 2px solid;
+    stroke-color:purple;
+    color:purple;
     &:hover {
         text-decoration: none;
-        color:white;
+        color:purple;
+
     }
 `
 
@@ -22,15 +25,55 @@ const NavigationBar = ({
 
 }) => {
     return(
-        <Row className='py-3'>
-            <Col>
-                <Title
-                    to={`/`}
-                    className='text-secondary font-weight-bold ml-5 pl-5'
-                >
-                    Sofia Rodriguez
-                </Title>
+        <Row className='py-3 justify-content-center'>
+            <Col xs={9}>
+                <Row className='justify-content-center'>
+                    <Col xs='auto' className='mr-auto'>
+                        <Title
+                            to={`/`}
+                            className='font-weight-bold'
+                        >
+                            Sofia Rodriguez
+                        </Title>
+                    </Col>
+
+                    {
+                        // <Col xs='auto'>
+                        //     <Row>
+                        //         <Link
+                        //             className='text-secondary text-right mt-3 ml-4'
+                        //             to='/Instagram'
+                        //         >
+                        //             Email
+                        //         </Link>
+                        //         <Link
+                        //             className='text-secondary text-right mt-3 ml-4'
+                        //             to='/Instagram'
+                        //         >
+                        //             Twitter
+                        //         </Link>
+                        //         <Link
+                        //             className='text-secondary text-right mt-3 ml-4'
+                        //             to='/Instagram'
+                        //         >
+                        //             Github
+                        //         </Link>
+                        //         <Link
+                        //             className='text-secondary text-right mt-3 ml-4'
+                        //             to='/Instagram'
+                        //         >
+                        //             Instagram
+                        //         </Link>
+                        //     </Row>
+                        // </Col>
+                    }
+                </Row>
             </Col>
+            <Col xs={1}/>
+            <Col xs={12}>
+                <hr/>
+            </Col>
+            <Col xs={1}/>
         </Row>
     )
 }

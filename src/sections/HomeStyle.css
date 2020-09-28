@@ -97,7 +97,7 @@ p{
     top: 5px;
     height: 150px;
     background:linear-gradient(-45deg, #331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #5BB850);
-    background-size: 400% 400%;
+    background-size: 100% 100%;
 	-webkit-animation: Gradient 35s ease infinite;
 	-moz-animation: Gradient 35s ease infinite;
 	animation: Gradient 35s ease infinite;
@@ -128,11 +128,11 @@ p{
 #Hero {
 
 	color: #fff;
-	background: linear-gradient(-45deg, #331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #5BB850, #43BAA6,  #3D488E, #13EDA5);
+	background: linear-gradient(-45deg, #5348cf,#331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #48cf8b, #43BAA6,  #3D488E, #525fee);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 35s ease infinite;
-	-moz-animation: Gradient 35s ease infinite;
-	animation: Gradient 35s ease infinite;
+	-webkit-animation: Gradient 45s linear infinite;
+	-moz-animation: Gradient 45s linear infinite;
+	animation: Gradient 45s linear infinite;
 }
 
 #AboutMe {

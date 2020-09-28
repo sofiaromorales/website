@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga';
 import React from 'react';
-import './styles/App.css'
+import './styles/App.scss'
 import {
     Switch,
     Route,
