@@ -24,16 +24,6 @@ const EntryCard= styled(Row)`
         box-shadow: 5px 0 11px rgba(51, 20, 84,.1), -5px 0 11px rgba(51, 20, 84,.1), 0 5px 11px rgba(179, 15, 176,.1), 0px -5px 11px rgba(91, 184, 80,.1);
     }
 `
-
-const Overlay = styled.div`
-    opacity: 0.9;
-    position:absolute;
-    background: white;
-    top:0;
-    bottom:0;
-    width: 100%
-`
-
 const Hero = styled(Col)`
     background: linear-gradient(-45deg, ${props => props.color1}, ${props => props.color2}, ${props => props.color3});
     background-size: 400% 400%;
@@ -51,7 +41,7 @@ class PostsPage extends Component{
     }
 
     componentDidMount(){
-
+        console.log(('POST PAGE'));
         fetch(`http://localhost:4000/api/fetchAllPosts`)
         .then(response =>{
             if (response.ok){
@@ -102,29 +92,31 @@ class PostsPage extends Component{
     }
 
     renderPostsWrappers = () => {
-        console.log('Math.random()');
-        console.log(backgroundColors[Math.floor(Math.random() * backgroundColors.length)]);
-        console.log(Math.floor(Math.random() * backgroundColors.length));
         const {
             posts
         } = this.state
 
         const postsSorted = this.sortPostsByDate(posts)
         return postsSorted.map(t => {
+            const color1=this.getRandomColor()
+            const color2=this.getRandomColor()
+            const color3=this.getRandomColor()
+            const color4=this.getRandomColor()
             const postInfo = this.getPostsTitles(t)
             return (
 
                 <Col xs={12} sm={6} lg={4} className='px-4'>
                     <Entry
-                        to={`/posts/${postInfo.link}`}
+                        to={`/posts/${postInfo.link}/${color1.substring(1)}/${color2.substring(1)}/${color3.substring(1)}/${color4.substring(1)}`}
+                        params={{ color1: color1 }}
                     >
                         <EntryCard className='my-3 border bg-white'>
                             <Hero
                                 xs={12}
-                                color1={this.getRandomColor()}
-                                color2={this.getRandomColor()}
-                                color3={this.getRandomColor()}
-                                color4={this.getRandomColor()}
+                                color1={color1}
+                                color2={color2}
+                                color3={color3}
+                                color4={color4}
                             />
                             <Col xs={12} className='p-4'>
                                 <p className='mb-0 text-secondary mb-5'>
@@ -150,9 +142,10 @@ class PostsPage extends Component{
         return(
 
             <Row className='justify-content-center'>
-            <Overlay/>
                 <Col xs={12} className=''>
-                    <NavigationBar/>
+                    <NavigationBar
+                        postsPage
+                    />
                 </Col>
                 <Col xs={10}>
                     <h1 className='mb-5'>

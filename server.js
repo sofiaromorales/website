@@ -62,8 +62,6 @@ app.get('/api/fetchAllPosts', (request, response) => {
 
 app.get('/api/fetchPost/:id', (request, response) => {
     const file = fs.readFileSync(`./docs/posts/${request.params.id}`)
-    console.log('file');
-    console.log(file);
     response.send(file)
 });
 

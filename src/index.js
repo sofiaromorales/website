@@ -10,8 +10,6 @@ import './fonts/AvenirLTStd-Medium.otf'
 import './fonts/AvenirLTStd-Roman.otf'
 
 
-
-
 const routing = (
   <Router>
     <div>

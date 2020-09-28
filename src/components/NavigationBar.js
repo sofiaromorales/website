@@ -22,7 +22,7 @@ const Entry = styled(Link)`
 `
 
 const NavigationBar = ({
-
+    postsPage
 }) => {
     return(
         <Row className='py-3 justify-content-center'>
@@ -70,9 +70,12 @@ const NavigationBar = ({
                 </Row>
             </Col>
             <Col xs={1}/>
-            <Col xs={12}>
-                <hr/>
-            </Col>
+            {
+                postsPage &&
+                <Col xs={12}>
+                    <hr/>
+                </Col>
+            }
             <Col xs={1}/>
         </Row>
     )
