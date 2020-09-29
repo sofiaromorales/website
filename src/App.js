@@ -2,6 +2,7 @@ import ReactGA from 'react-ga';
 import React from 'react';
 import './styles/App.css'
 import HomePage from './pages/HomePage.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
