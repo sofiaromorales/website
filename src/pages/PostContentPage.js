@@ -30,6 +30,11 @@ const Hero = styled(Col)`
     animation: Gradient 45s ease infinite;
 `
 
+const StrippedBox = styled(Col)`
+border: 2px dashed purple;
+
+`
+
 class PostContentPage extends Component{
 
     state = {
@@ -52,9 +57,6 @@ class PostContentPage extends Component{
                 .then(response => response.text())
                 .then(response => {
                     const post = response
-                    console.log('post.indexOf(\n,1)');
-                    console.log(post.indexOf('min read'));
-                    console.log(post);
                     this.setState({post: post})
                     this.setState({title: this.props.match.params.id.slice(0, this.props.match.params.id.indexOf('_',1))})
                     this.setState({date: this.props.match.params.id.slice(this.props.match.params.id.indexOf('_',1) + 1, -3)})
@@ -87,7 +89,7 @@ class PostContentPage extends Component{
                         </Col>
                     </Row>
                 </Hero>
-                <Col xs={10} className='my-5'>
+                <Col xs={6} className='my-5'>
 
                     <p>
                         {`${moment(this.state.date).format('MMMM Do YYYY')}  🔥 ${this.state.time}  🔥`}
@@ -115,6 +117,16 @@ class PostContentPage extends Component{
                         </>
                 }
                 </Col>
+                <StrippedBox xs={6} className='p-5 mb-5 text text-center'>
+                    {`If you liked this post and wants to chat feel free to send me an `}
+                    <a href='mailto:sofiaromorales@gmail.com' style={{color:'purple'}}>
+                         email
+                    </a> or contact me via
+                    <a href='https://twitter.com/sofiarom_00' style={{color:'purple'}}>
+                        Twitter
+                    </a> 💜
+                </StrippedBox>
+                <Col xs={12}/>
                 <Col md={4} lg={3}>
                     <Link
                         to='/Posts'
