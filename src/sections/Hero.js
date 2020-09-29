@@ -47,7 +47,7 @@ class Hero extends Component {
                             <li><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
                             <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
                             <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
-                            <li><NavigationBarLinks link = '/posts' title = 'Posts'/></li>
+                            <li><NavigationBarLinks link = '/posts' title = 'Blog'/></li>
                     </Col>
                 </Row>
                 </Col>

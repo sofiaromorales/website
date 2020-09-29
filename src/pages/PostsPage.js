@@ -149,7 +149,7 @@ class PostsPage extends Component{
                 </Col>
                 <Col xs={10}>
                     <h1 className='mb-5'>
-                        My thoughts in a nutshell
+                        Me & my thoughts
                     </h1>
                     <h5>
                         Welcome to my blog, here you will find some of my thoughts and experiences, mostly all of them about tech.
