@@ -20,7 +20,10 @@ function NavigationBarLinks(props){
 class Hero extends Component {
     render() {
         return(
-            <Row id='Hero' style={{height:window.innerHeight}}>
+            <Row
+                id='Hero'
+                style={{height:window.innerHeight}}
+            >
                 <Col span={2}/>
                 <Col span={20}>
                 <Row>

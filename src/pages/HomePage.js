@@ -14,7 +14,7 @@ import Divider from '../components/Divider'
 class HomePage extends Component {
     render() {
         return(
-            <div>
+            <div className='HomePage'>
                 <Hero/>
                 <AboutMe/>
                 <Divider/>

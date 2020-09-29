@@ -12,9 +12,13 @@ class AboutMe extends Component {
 
     render() {
         return(
-            <Row id='AboutMe' style={{color:' #515151',
-                fontFamily: "Avenir",
-                fontSize: '20px'}}>
+            <Row id='AboutMe'
+                style={{
+                    color:' #515151',
+                    fontFamily: "Avenir",
+                    fontSize: '20px'
+                }}
+            >
 
                 <Col>
                     <p style = {{
