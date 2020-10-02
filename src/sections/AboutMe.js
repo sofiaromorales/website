@@ -41,8 +41,8 @@ Interested in working together? Just shoot me a message and let’s see what I c
 
                 <Col span={4} md={9}/>
                 <Col span={16} md={6}>
-                    <button type="button" onClick={handleLetsTalkClick} id="talkBtn">
-                        Lets talk!
+                    <button type="button" onClick={handleLetsTalkClick} id='talkBtn'>
+                        {`LET'S TALK`}
                     </button>
                 </Col>
                 <Col span={4} md={9}/>
