@@ -13,6 +13,7 @@ import Divider from '../components/Divider'
 class HomePage extends Component {
     render() {
         return(
+            //merge fix
             <div>
                 <Hero/>
                 <AboutMe/>

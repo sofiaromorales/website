@@ -11,6 +11,8 @@ const handleLetsTalkClick = () => {
 class AboutMe extends Component {
 
     render() {
+        //merge fix
+        
         return(
             <Row id='AboutMe'
                 style={{

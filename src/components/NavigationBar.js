@@ -24,6 +24,8 @@ const Entry = styled(Link)`
 const NavigationBar = ({
     postsPage
 }) => {
+    //merge fix
+    
     return(
         <Row className='py-3 justify-content-center'>
             <Col xs={9}>

@@ -22,6 +22,8 @@ function NavigationBarLinks(props){
 
 class Hero extends Component {
     render() {
+        //merge fix
+        
         return(
             <Row id='Hero' style={{height:window.innerHeight}}>
                 <Col span={2}/>
