@@ -19,6 +19,7 @@ class AboutMe extends Component {
                     fontSize: '20px'
                 }}
             >
+
                 <Col>
                     <p style = {{
                         fontSize: '48px',
@@ -34,14 +35,14 @@ class AboutMe extends Component {
                         <Paragraph>I have attended the Apple Worldwide Developers Confrence three times as an Apple scholar.</Paragraph>
                         <Paragraph> My main goal is turn ideas into reality creating beautiful and engaging products. </Paragraph>
                         <Paragraph>My main goal is to turn ideas into reality by creating beautiful and engaging products.
-                        Interested in working together? Just shoot me a message and let’s see what I can do for you!</Paragraph>
+Interested in working together? Just shoot me a message and let’s see what I can do for you!</Paragraph>
                 </Col>
                 <Col span={2} md={7}/>
 
                 <Col span={4} md={9}/>
                 <Col span={16} md={6}>
-                    <button type="button" onClick={handleLetsTalkClick} id="talkBtn">
-                        Lets talk!
+                    <button type="button" onClick={handleLetsTalkClick} id='talkBtn'>
+                        {`LET'S TALK`}
                     </button>
                 </Col>
                 <Col span={4} md={9}/>

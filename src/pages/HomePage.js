@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Hero from '../sections/Hero'
 import AboutMe from '../sections/AboutMe'
 import Skills from '../sections/Skills'
@@ -13,7 +14,7 @@ import Divider from '../components/Divider'
 class HomePage extends Component {
     render() {
         return(
-            <div>
+            <div className='HomePage'>
                 <Hero/>
                 <AboutMe/>
                 <Divider/>
