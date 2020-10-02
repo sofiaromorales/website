@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 
-
 import ucabista from '../assets/images/elucabista.png'
 import abcu from '../assets/images/abcu.png'
 

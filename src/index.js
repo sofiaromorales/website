@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts/AvenirLTStd-Book.otf'
 import './fonts/AvenirLTStd-Medium.otf'
 import './fonts/AvenirLTStd-Roman.otf'
-
-
 
 
 const routing = (

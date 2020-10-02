@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+
+body{
+    background-color: #FEFDF5;
+    width: auto;
+}
+
+$theme-colors: (
+  'primary': pink,
+  'danger': #ff4136,
+  'secondary':pink,
+);

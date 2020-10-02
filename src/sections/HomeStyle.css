@@ -6,8 +6,8 @@ li {
 
 }
 
-a {
-    color: white !important;
+a{
+    color: white;
     font-family: "Avenir";
     text-decoration: none;
     font-size: 18px;
@@ -123,29 +123,23 @@ p{
     right: 20px;
     padding: 0;
     overflow: hidden;
-    color: white
-}
-
-.HomePage{
-    a {
-        color: white
-    }
 }
 
 #Hero {
 
-	color: #FFFFFF;
-	background: linear-gradient(-45deg, #331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #5BB850, #43BAA6,  #3D488E, #13EDA5);
+	color: #fff;
+	background: linear-gradient(-45deg, #5348cf,#331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #48cf8b, #43BAA6,  #3D488E, #525fee);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 35s ease infinite;
-	-moz-animation: Gradient 35s ease infinite;
-	animation: Gradient 35s ease infinite;
+	-webkit-animation: Gradient 45s linear infinite;
+	-moz-animation: Gradient 45s linear infinite;
+	animation: Gradient 45s linear infinite;
 }
 
 #AboutMe {
 
 	height: 500;
-	color: #ffffff;
+	color: #fff;
+	background-color: #FEFDF5;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -153,12 +147,12 @@ p{
 
 #talkBtn{
 
-    font-size: 15px;
+    font-size: 14px;
     border-color: #AD40E5;
     border-radius: 50;
-    background-color: #FFFFFF;
+    background-color: #FEFDF5;
     border-radius: 50px;
-    color: #AD40E5;
+    color: #515151;
     height: 50px;
     width: 100%;
     margin-top: 20px;

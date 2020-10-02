@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import NavigationSocialLinks from '../components/NavigationSocialLinks'
 
 class Footer extends Component {

@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: Avenir;
@@ -14,7 +15,14 @@ html{
     scroll-behavior: smooth;
 }
 
+
 @font-face {
   font-family: 'Avenir';
   src: local('Avenir'), url(./fonts/AvenirLTStd-Book.otf) format('opentype');
 }
+
+$theme-colors: (
+  'primary': pink,
+  'danger': #ff4136,
+  'secondary':pink,
+);
