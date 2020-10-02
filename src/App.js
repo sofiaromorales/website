@@ -1,14 +1,10 @@
 import ReactGA from 'react-ga';
 import React from 'react';
-import './styles/App.scss'
-import {
-    Switch,
-    Route,
-} from 'react-router-dom';
-
+import './styles/App.css'
 import HomePage from './pages/HomePage.js'
-import PostsPage from './pages/PostsPage.js'
-import PostContentPage from './pages/PostContentPage'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function initializeReactGA() {
     ReactGA.initialize('UA-147078244-1');
@@ -23,23 +19,11 @@ class App extends React.Component {
 
     render() {
         return (
-            <Switch>
-                <Route path='/' exact>
-                    <HomePage/>
-                </Route>
-                <Route path='/posts' exact>
-                    <PostsPage/>
-                </Route>
-                <Route
-                    name='postContent'
-                    path='/posts/:id/:color1?/:color2?/:color3?/:color4?'
-                    render={(props) => (
-                        <PostContentPage
-                            {...props}
-                        />
-                    )}
-                    />
-            </Switch>
+            <div>
+
+                <HomePage/>
+
+            </div>
         )
     }
 }
