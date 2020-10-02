@@ -29,7 +29,7 @@ class AboutMe extends Component {
                 </Col>
                 <Col span={2} md={7}/>
                 <Col span={20} md={10}>
-                        <Paragraph>Hello! I’m a freelance developer from Caracas, Venezuela.</Paragraph>
+                        <Paragraph>Hello! I’m a developer from Caracas, Venezuela.</Paragraph>
                         <Paragraph>I create websites, iOS apps, and designs.</Paragraph>
                         <Paragraph>I have attended the Apple Worldwide Developers Confrence three times as an Apple scholar.</Paragraph>
                         <Paragraph> My main goal is turn ideas into reality creating beautiful and engaging products. </Paragraph>
