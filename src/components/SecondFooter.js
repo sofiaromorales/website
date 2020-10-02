@@ -36,7 +36,7 @@ const SecondFooter = ({
             </a>
             <a
                 className='text-secondary text-right mt-3 ml-4'
-                href='https://www.instagram.com/sofiaro.m/?hl=es-la'
+                href='https://www.instagram.com/sofiaro.m/'
                 target='_blank'
                 rel='noopener noreferrer'
             >

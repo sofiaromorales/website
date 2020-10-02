@@ -135,7 +135,7 @@ class PostContentPage extends Component{
                             <BackButton xs={6} className='py-2 px-4'>
 
                                     <p className='text text-center font-weight-bold mb-0'>
-                                        {'Go back to Posts'}
+                                        {'Back to Posts'}
                                     </p>
 
                             </BackButton>

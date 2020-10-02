@@ -37,6 +37,7 @@ app.use(bodyParser.json());
 //   res.json({ error: status })
 //   //res.render('error');
 // });
+//text
 app.use(express.static(__dirname + '/build'));
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls

@@ -152,7 +152,7 @@ class PostsPage extends Component{
                         Me & my thoughts
                     </h1>
                     <h5>
-                        Welcome to my blog, here you will find some of my thoughts and experiences, mostly all of them about tech.
+                        Welcome to my blog, here you will find some of my thoughts and experiences, some abouth tech some not.
                     </h5>
                 </Col>
                 <Col xs={10} className='mt-5'>
