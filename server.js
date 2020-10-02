@@ -14,11 +14,12 @@ var whitelist = [
 ]
 var corsOptions = {
     origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
+        callback(null, true)
+        // if (whitelist.indexOf(origin) !== -1) {
+        //     callback(null, true)
+        // } else {
+        //     callback(new Error('Not allowed by CORS'))
+        // }
     },
     credentials: true,
     methods: ['GET,PUT,POST,DELETE,OPTIONS'],
@@ -29,15 +30,17 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
-app.use((err, req, res, next) => {
-  res.locals.error = err;
-  const status = err.status || 500;
-  res.sendStatus(status);
-  //res.render('error');
-});
+// app.use((err, req, res, next) => {
+//   res.locals.error = err;
+//   const status = err.status || 500;
+//   res.json({ error: status })
+//   //res.render('error');
+// });
 
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls
+    console.log('req');
+    console.log(req);
     if (req.path.indexOf('/api/') != -1) {
         return next();
     }
