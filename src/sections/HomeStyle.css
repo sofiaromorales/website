@@ -6,8 +6,8 @@ li {
 
 }
 
-a{
-    color: white;
+a {
+    color: white !important;
     font-family: "Avenir";
     text-decoration: none;
     font-size: 18px;
@@ -123,11 +123,18 @@ p{
     right: 20px;
     padding: 0;
     overflow: hidden;
+    color: white
+}
+
+.HomePage{
+    a {
+        color: white
+    }
 }
 
 #Hero {
 
-	color: #fff;
+	color: #FFFFFF;
 	background: linear-gradient(-45deg, #331454, #3F45D2, #B30FB0, #E73C7E, #EE7752, #5BB850, #43BAA6,  #3D488E, #13EDA5);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 35s ease infinite;
@@ -138,8 +145,7 @@ p{
 #AboutMe {
 
 	height: 500;
-	color: #fff;
-	background-color: #FEFDF5;
+	color: #ffffff;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -147,12 +153,12 @@ p{
 
 #talkBtn{
 
-    font-size: 14px;
+    font-size: 15px;
     border-color: #AD40E5;
     border-radius: 50;
-    background-color: #FEFDF5;
+    background-color: #FFFFFF;
     border-radius: 50px;
-    color: #515151;
+    color: #AD40E5;
     height: 50px;
     width: 100%;
     margin-top: 20px;
