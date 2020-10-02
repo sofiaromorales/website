@@ -4,7 +4,8 @@ var bodyParser = require('body-parser')
 var cors = require('cors');
 
 const app = express()
-const port = 4000
+const isProduction = process.env.NODE_ENV === 'production';
+var port = isProduction ? process.env.PORT : 4000;
 
 var whitelist = [
     'http://localhost:3000',
@@ -36,14 +37,14 @@ app.use(bodyParser.json());
 //   res.json({ error: status })
 //   //res.render('error');
 // });
-
+app.use(express.static(__dirname + '/build'));
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls
-    console.log('req');
-    console.log(req);
+    console.log('app get');
     if (req.path.indexOf('/api/') != -1) {
         return next();
     }
+    console.log('/build/index.html');
 
     fs.readFile(__dirname + '/build/index.html', 'utf8', function (err, text) {
         res.send(text);
@@ -60,13 +61,13 @@ app.get('/api/test', (request, response) => {
 
 app.get('/api/fetchAllPosts', (request, response) => {
     const file = fs.readdirSync('./docs/posts/')
-    .then(() => response.send(file))
+    response.send(file)
     //response.send(file)
 });
 
 app.get('/api/fetchPost/:id', (request, response) => {
     const file = fs.readFileSync(`./docs/posts/${request.params.id}`)
-    .then(() => response.send(file))
+    response.send(file)
     // response.send(file)
 });
 
