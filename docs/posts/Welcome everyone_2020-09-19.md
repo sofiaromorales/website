@@ -1,3 +1,3 @@
-3 min read
+1 min read
 # Welcome to my website
-This is some dummy text
+This is still under construction, will update soon

@@ -8,7 +8,7 @@ const SecondFooter = ({
 
 }) => {
     return(
-        <Row className='justify-content-center mt-5'>
+        <Row className='justify-content-center my-5'>
             <Col xs={12}>
                 <hr/>
             </Col>
