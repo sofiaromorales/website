@@ -41,12 +41,9 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/build'));
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls
-    console.log('app get');
     if (req.path.indexOf('/api/') != -1) {
         return next();
     }
-    console.log('/build/index.html');
-
     fs.readFile(__dirname + '/build/index.html', 'utf8', function (err, text) {
         res.send(text);
 

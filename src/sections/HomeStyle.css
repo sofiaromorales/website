@@ -6,12 +6,7 @@ li {
 
 }
 
-a {
-    color: white !important;
-    font-family: "Avenir";
-    text-decoration: none;
-    font-size: 18px;
-}
+
 
 img{
     margin:10px;
@@ -22,6 +17,15 @@ img{
 p{
     font-family: 'Avenir';
     color:' #515151'
+}
+
+#Hero a{
+
+        color: white;
+        font-family: "Avenir";
+        text-decoration: none;
+        font-size: 18px;
+
 }
 
 .imageHolder{
