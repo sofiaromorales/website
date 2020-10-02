@@ -19,6 +19,8 @@ function NavigationBarLinks(props){
 
 class Hero extends Component {
     render() {
+        //merge fix
+        
         return(
             <Row
                 id='Hero'
