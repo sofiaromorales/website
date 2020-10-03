@@ -19,6 +19,8 @@ function NavigationBarLinks(props){
 
 class Hero extends Component {
     render() {
+        //merge fix
+
         return(
             <Row
                 id='Hero'
@@ -47,6 +49,7 @@ class Hero extends Component {
                             <li><NavigationBarLinks link = "#AboutMe" title = "About Me"/></li>
                             <li><NavigationBarLinks link = "#Skills" title = "Skills" /></li>
                             <li><NavigationBarLinks link = "#Projects" title = "Projects"/></li>
+                            <li><NavigationBarLinks link = '/posts' title = 'Blog'/></li>
                     </Col>
                 </Row>
 

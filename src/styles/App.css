@@ -3,4 +3,5 @@
 body{
 
     width: auto;
+    overflow-x: hidden;
 }
