@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import moment from 'moment'
 import styled from 'styled-components'
 
-
 import NavigationBar from '../components/NavigationBar'
 import Footer from '../sections/Footer'
 import SecondFooter from '../components/SecondFooter'
+
+import { API_ROOT } from '../constants'
+
 
 const backgroundColors = ['#5348cf', '#331454', '#3F45D2', '#B30FB0', '#E73C7E', '#EE7752', '#48cf8b', '#43BAA6',  '#3D488E', '#525fee']
 
@@ -41,7 +43,7 @@ class PostsPage extends Component{
     }
 
     componentDidMount(){
-        fetch(`http://localhost:4000/api/fetchAllPosts`)
+        fetch(`${API_ROOT}/fetchAllPosts`)
         .then(response =>{
             if (response.ok){
                 return Promise.resolve(response)

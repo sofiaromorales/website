@@ -8,6 +8,8 @@ import styled from 'styled-components'
 import NavigationBar from '../components/NavigationBar'
 import SecondFooter from '../components/SecondFooter'
 
+import { API_ROOT } from '../constants'
+
 const BackButton = styled(Col)`
     border-radius: 5px;
     background:white;
@@ -66,7 +68,7 @@ class PostContentPage extends Component{
         console.log('com m');
         if (this.props.match.params.id != null){
             console.log('this.props.match.params.i');
-            fetch(`http://localhost:4000/api/fetchPost/${this.props.match.params.id}`)
+            fetch(`${API_ROOT}/fetchPost/${this.props.match.params.id}`)
                 .then(response => {
                     if (response.ok){
                         return Promise.resolve(response)
