@@ -35,6 +35,24 @@ border: 2px dashed purple;
 
 `
 
+const renderers = {
+        image: ({
+            alt,
+            src,
+            title,
+        }: {
+            alt?: string;
+            src?: string;
+            title?: string;
+        }) => (
+            <img
+                alt={alt}
+                src={src}
+                title={title}
+                style={{ maxWidth: 500, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}  />
+        ),
+    };
+
 class PostContentPage extends Component{
 
     state = {
@@ -45,7 +63,9 @@ class PostContentPage extends Component{
     }
 
     componentDidMount(){
+        console.log('com m');
         if (this.props.match.params.id != null){
+            console.log('this.props.match.params.i');
             fetch(`http://localhost:4000/api/fetchPost/${this.props.match.params.id}`)
                 .then(response => {
                     if (response.ok){
@@ -67,7 +87,6 @@ class PostContentPage extends Component{
                     console.log(error);
                 })
         }
-
     }
 
     renderPost = (post) => {
@@ -90,12 +109,18 @@ class PostContentPage extends Component{
                     </Row>
                 </Hero>
                 <Col xs={6} className='my-5'>
-
+                    <Link to='/Posts' style={{color: 'purple'}}>
+                        Back to posts
+                    </Link>
+                    <br/>
+                    <br/>
                     <p>
                         {`${moment(this.state.date).format('MMMM Do YYYY')}  🔥 ${this.state.time}  🔥`}
                     </p>
                     <ReactMarkdown
                         source={this.state.post.slice(post.indexOf('\n',1))}
+                        escapeHtml={false}
+                        renderers={renderers}
                     />
                 </Col>
             </Row>

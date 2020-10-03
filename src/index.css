@@ -3,6 +3,7 @@ body {
   font-family: Avenir;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -12,6 +13,7 @@ code {
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @font-face {

@@ -41,9 +41,12 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/build'));
 app.get('*', function (req, res, next) {
     // Prevents an HTML response for API calls
+    console.log('load');
     if (req.path.indexOf('/api/') != -1) {
+        console.log('api call');
         return next();
     }
+    console.log('index');
     fs.readFile(__dirname + '/build/index.html', 'utf8', function (err, text) {
         res.send(text);
 
@@ -64,6 +67,7 @@ app.get('/api/fetchAllPosts', (request, response) => {
 });
 
 app.get('/api/fetchPost/:id', (request, response) => {
+    console.log('/api/fetchPost/:id');
     const file = fs.readFileSync(`./docs/posts/${request.params.id}`)
     response.send(file)
     // response.send(file)

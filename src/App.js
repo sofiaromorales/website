@@ -31,8 +31,8 @@ class App extends React.Component {
                     <PostsPage/>
                 </Route>
                 <Route
-                    name='postContent'
                     path='/posts/:id/:color1?/:color2?/:color3?/:color4?'
+                    exact
                     render={(props) => (
                         <PostContentPage
                             {...props}

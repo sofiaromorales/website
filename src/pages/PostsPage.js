@@ -41,7 +41,6 @@ class PostsPage extends Component{
     }
 
     componentDidMount(){
-        console.log(('POST PAGE'));
         fetch(`http://localhost:4000/api/fetchAllPosts`)
         .then(response =>{
             if (response.ok){
