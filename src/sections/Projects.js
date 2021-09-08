@@ -28,7 +28,7 @@ class Projects extends Component {
                     Projects
                 </p>
                     <Row type="flex" justify="space-around">
-                        <Col md={12} style={{marginTop:20}}>
+                        <Col md={12} style={{marginTop:20}} onClick={() => window.open(`https://github.com/sofiarm21/zuma`)}>
                             <div className= 'ProjectContainer'>
                                 <img src={zuma}   alt='Zuma'/>
                                 <p>
@@ -37,7 +37,7 @@ class Projects extends Component {
                                 </p>
                             </div>
                         </Col>
-                        <Col md={12} style={{marginTop:20}}>
+                        <Col md={12} style={{marginTop:20}} onClick={() => window.open(`https://github.com/sofiarm21/Kosaraju-Algorithm`)}>
                             <div className= 'ProjectContainer'>
                                 <img src={kosaraju}   alt='Kosaraju'/>
                                 <p >
@@ -46,7 +46,7 @@ class Projects extends Component {
                                 </p>
                             </div>
                         </Col>
-                        <Col md={12} style={{marginTop:20}}>
+                        <Col md={12} style={{marginTop:20}} onClick={() => window.open(`https://github.com/sofiarm21/drawingWar`)}>
                             <div className= 'ProjectContainer'>
                                 <img src={drawing}   alt='Drawing War'/>
                                 <p >

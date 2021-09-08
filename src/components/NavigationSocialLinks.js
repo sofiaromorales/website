@@ -3,7 +3,7 @@ import React from 'react';
 
 function NavigationSocialLinks(props){
     return(
-        <a href={props.link} target='_blank'> {props.title}</a>
+        <a className='NavigationSocialLinks' href={props.link} target='_blank'> {props.title}</a>
     );
 }
 
