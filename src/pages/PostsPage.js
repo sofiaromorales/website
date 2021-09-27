@@ -157,10 +157,8 @@ class PostsPage extends Component{
                     </h5>
                 </Col>
                 <Col xs={10} className='mt-5'>
-
-                    {
-                        this.state.posts &&
-                        <Row className='justify-content-between'>
+                    {this.state.posts &&
+                        <Row className='justify-content-left'>
                             {this.renderPostsWrappers()}
                         </Row>
                     }
@@ -169,7 +167,7 @@ class PostsPage extends Component{
                     // <Col xs={12} className='align-self-end'>
                     //     <Footer/>
                     // </Col>
-            }
+                }
                 <Col xs={10}>
                     <SecondFooter/>
                 </Col>

@@ -4,6 +4,8 @@ import ReactMarkdown from 'react-markdown'
 import { Link } from 'react-router-dom'
 import moment from 'moment'
 import styled from 'styled-components'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 import NavigationBar from '../components/NavigationBar'
 import SecondFooter from '../components/SecondFooter'
@@ -37,24 +39,6 @@ border: 2px dashed purple;
 
 `
 
-const renderers = {
-        image: ({
-            alt,
-            src,
-            title,
-        }: {
-            alt?: string;
-            src?: string;
-            title?: string;
-        }) => (
-            <img
-                alt={alt}
-                src={src}
-                title={title}
-                style={{ maxWidth: 500, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}  />
-        ),
-    };
-
 class PostContentPage extends Component{
 
     state = {
@@ -65,9 +49,7 @@ class PostContentPage extends Component{
     }
 
     componentDidMount(){
-        console.log('com m');
         if (this.props.match.params.id != null){
-            console.log('this.props.match.params.i');
             fetch(`${API_ROOT}/fetchPost/${this.props.match.params.id}`)
                 .then(response => {
                     if (response.ok){
@@ -90,6 +72,7 @@ class PostContentPage extends Component{
                 })
         }
     }
+
 
     renderPost = (post) => {
 
@@ -119,10 +102,43 @@ class PostContentPage extends Component{
                     <p>
                         {`${moment(this.state.date).format('MMMM Do YYYY')}  🔥 ${this.state.time}  🔥`}
                     </p>
+
                     <ReactMarkdown
-                        source={this.state.post.slice(post.indexOf('\n',1))}
-                        escapeHtml={false}
-                        renderers={renderers}
+                        children={this.state.post.slice(post.indexOf('\n',1))}
+                        components={{
+                            p: ({ node, children }) => {
+                                if (node.children[0].tagName === 'img') {
+                                    const image: any = node.children[0];
+                                    return (
+                                        <div className='image'>
+                                            <img
+                                                src={image.properties.src}
+                                                alt={image.properties.alt}
+                                                style={{ maxWidth: 700, display: 'block', marginRight: 'auto', marginLeft: 'auto' }}
+                                            />
+                                        </div>
+                                    );
+                                }
+                                // Return default child if it's not an image
+                                return <p>{children}</p>;
+                            },
+                            code({node, inline, className, children, ...props}) {
+                                const match = /language-(\w+)/.exec(className || '')
+                                return !inline && match ? (
+                                    <SyntaxHighlighter
+                                        children={String(children).replace(/\n$/, '')}
+                                        style={dracula}
+                                        language={match[1]}
+                                        PreTag="div"
+                                        {...props}
+                                    />
+                                ) : (
+                                    <code className={className} {...props}>
+                                        {children}
+                                    </code>
+                                )
+                            }
+                        }}
                     />
                 </Col>
             </Row>
@@ -130,18 +146,16 @@ class PostContentPage extends Component{
     }
 
     render(){
-
         return (
             <Row className='justify-content-center'>
                 <Col xs={12} className=''>
                     <NavigationBar/>
                 </Col>
                 <Col xs={12}>
-                {
-                    this.state.post &&
-                        <>
-                            {this.renderPost(this.state.post)}
-                        </>
+                {this.state.post &&
+                    <>
+                        {this.renderPost(this.state.post)}
+                    </>
                 }
                 </Col>
                 <StrippedBox xs={6} className='p-5 mb-5 text text-center'>
@@ -160,11 +174,9 @@ class PostContentPage extends Component{
                     >
                         <Row className='justify-content-center'>
                             <BackButton xs={6} className='py-2 px-4'>
-
                                     <p className='text text-center font-weight-bold mb-0'>
                                         {'Back to Posts'}
                                     </p>
-
                             </BackButton>
                         </Row>
                     </Link>
