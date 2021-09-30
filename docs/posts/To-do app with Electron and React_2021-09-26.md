@@ -162,7 +162,7 @@ On ready and activated we want to create our app window, and when closed we want
 
 ### The react app
 
-The electron part of the app is covered already, what's left is building the todo app perse, I'm will suppose that you have experience with javascript and react, but anyway we are not going to do anything fancy.
+The electron part of the app is covered already, what's left is building the todo app perse, I'm will suppose that you have experience with javascript and react, but anyway we are not going to do anything fancy. Feel free to take it from here and build your own todo app on React.
 
 This app will have three lists, the pending, completed, and on hold tasks. Each task will have a series of button to be able to move the task from list to list, we are going to have an input bar to add tasks to the pending list and a progress bar to easily see our progress.
 
