@@ -1,7 +1,7 @@
 10 min read
 # Creating a simple to-do app with Electron and React
 
-**Hi everyone!** before starting you can check the project here https://github.com/sofiarm21/get-sht-done
+**Hi everyone!** I've always liked technical writing, so I wrote thi as my first tech post, hope you like it.
 
 I'm a big fan of Cassidy Williams, and she has this cool tool that she built herself called todometer ([https://github.com/cassidoo/todometer](https://github.com/cassidoo/todometer)), so some weeks ago I was thinking about what app to make to learn something new so I decided to try to make something similar to Cassisy's app, but this time I would document the hole process, and that's how I came up with the idea for GetSh*tDone
 
@@ -162,7 +162,7 @@ On ready and activated we want to create our app window, and when closed we want
 
 ### The react app
 
-The electron part of the app is covered already, what's left is building the todo app perse, I'm will suppose that you have experience with javascript and react, but anyway we are not going to do anything fancy.
+The electron part of the app is covered already, what's left is building the todo app perse, I'm will suppose that you have experience with javascript and react, but anyway we are not going to do anything fancy. Feel free to take it from here and build your own todo app on React.
 
 This app will have three lists, the pending, completed, and on hold tasks. Each task will have a series of button to be able to move the task from list to list, we are going to have an input bar to add tasks to the pending list and a progress bar to easily see our progress.
 
