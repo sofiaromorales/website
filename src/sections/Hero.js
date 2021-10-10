@@ -37,9 +37,9 @@ class Hero extends Component {
                         </Col>
                         <Col md={12} span={24}>
 
-                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://www.instagram.com/sofiaro.m/?hl=es-la" target="_blank" title = "Instagram"/></li>
-                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://twitter.com/sofiarom_00" target="_blank" title = "Twitter"/></li>
-                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://github.com/sofiarm21" target="_blank" title = "Github"/></li>
+                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://www.instagram.com/sofiaromorales/" target="_blank" title = "Instagram"/></li>
+                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://twitter.com/sofiaromorales" target="_blank" title = "Twitter"/></li>
+                                 <li style={{float:'right'}}><NavigationSocialLinks link = "https://github.com/sofiaromorales" target="_blank" title = "GitHub"/></li>
                                  <li style={{float:'right'}}><NavigationSocialLinks link = "mailto:sofiaromorales@gmail.com" title = "Email"/></li>
 
                         </Col>
