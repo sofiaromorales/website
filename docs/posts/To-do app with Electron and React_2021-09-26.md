@@ -1,9 +1,9 @@
 10 min read
 # Creating a simple to-do app with Electron and React
 
-**Hi everyone!** I've always liked technical writing, so I wrote thi as my first tech post, hope you like it.
+**Hi everyone!** I've always liked technical writing, so I wrote this as my first tech post, hope you like it.
 
-I'm a big fan of Cassidy Williams, and she has this cool tool that she built herself called todometer ([https://github.com/cassidoo/todometer](https://github.com/cassidoo/todometer)), so some weeks ago I was thinking about what app to make to learn something new so I decided to try to make something similar to Cassisy's app, but this time I would document the hole process, and that's how I came up with the idea for GetSh*tDone
+I'm a big fan of Cassidy Williams, and she has this cool tool that she built herself called todometer ([https://github.com/cassidoo/todometer](https://github.com/cassidoo/todometer)), so some weeks ago I was thinking about what app to make to learn something new so I decided to try to make something similar to Cassisy's app, but this time I would document the whole process, and that's how I came up with the idea for GetSh*tDone
 
 GetSh*tDone is a very minimal app where you can track your todos and will see the progress on a progress bar. Check it out here [https://github.com/sofiarm21/get-sht-done](https://github.com/sofiarm21/get-sht-done)
 
