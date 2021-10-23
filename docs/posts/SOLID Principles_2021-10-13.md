@@ -1,4 +1,4 @@
-10 min read
+8 min read
 
 # SOLID Principles  
 
