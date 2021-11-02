@@ -12,7 +12,7 @@ class AboutMe extends Component {
 
     render() {
         //merge fix
-        
+
         return(
             <Row id='AboutMe'
                 style={{
@@ -35,7 +35,6 @@ class AboutMe extends Component {
                         <Paragraph>Hello! I’m a developer from Caracas, Venezuela.</Paragraph>
                         <Paragraph>I create websites, iOS apps, and designs.</Paragraph>
                         <Paragraph>I have attended the Apple Worldwide Developers Confrence three times as an Apple scholar.</Paragraph>
-                        <Paragraph> My main goal is turn ideas into reality creating beautiful and engaging products. </Paragraph>
                         <Paragraph>My main goal is to turn ideas into reality by creating beautiful and engaging products.
 Interested in working together? Just shoot me a message and let’s see what I can do for you!</Paragraph>
                 </Col>
